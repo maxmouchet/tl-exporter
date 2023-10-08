@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tl-exporter"
+version = "0.1.0"
+description = "Prometheus exporter for the TP-Link TL-SG105PE switch."
+authors = ["Maxime Mouchet <max@maxmouchet.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+chompjs = "^1.2.2"
+httpx = "^0.25.0"
+prometheus-client = "^0.17.1"
+pydantic = "^2.4.2"
+pydantic-settings = "^2.0.3"
+
+[tool.ruff]
+select = ["E", "F", "I"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
